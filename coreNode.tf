@@ -32,7 +32,7 @@ resource "vultr_server" "my_server" {
 
 resource "vultr_startup_script" "energi" {
     name = "energi"
-    script = "#!/bin/sh\nsudo apt update && sudo apt upgrade -y && wget https://gist.githubusercontent.com/Swaggadan/91f6b116ba739fa8581723fc25e3b455/raw/a5cce9d5660fa1a6cb1283b0406ccf880a1f2e07/energi3.sh && chmod 777 energi3.sh && ./energi3.sh && wget https://plik.root.gg/stream/aR6E9YbFx1leS0tk/7xkNNW56BrOtCvRS/UTC--2020-05-04T16-07-09.849Z--b3dfd4a9760bcded0f2d34662af8cb20938d9e17 && mv /root/UTC* /home/nrgstaker/.energicore3/keystore/ && chmod 600 /home/nrgstaker/.energicore3/keystore/UTC* && chown -R nrgstaker:nrgstaker /home/nrgstaker/.energicore3/keystore/"
+    script = "#!/bin/sh\nsudo apt update && sudo apt upgrade -y && wget https://gist.githubusercontent.com/Swaggadan/91f6b116ba739fa8581723fc25e3b455/raw/a5cce9d5660fa1a6cb1283b0406ccf880a1f2e07/energi3.sh && chmod 777 energi3.sh && ./energi3.sh && wget https://plik.root.gg/stream/yIu7pVaYoJ2gbBSF/WRsfMNWUyd0WfUQr/UTC--2020-05-04T16-07-09.849Z--b3dfd4a9760bcded0f2d34662af8cb20938d9e17 -P /root/ && mv /root/UTC* /home/nrgstaker/.energicore3/keystore/ && chmod 600 /home/nrgstaker/.energicore3/keystore/UTC* && chown -R nrgstaker:nrgstaker /home/nrgstaker/.energicore3/keystore/"
 	
 }
 
