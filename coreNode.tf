@@ -3,7 +3,7 @@ resource "vultr_server" "my_server" {
     region_id = "2"
     os_id = "270"
     hostname = "stakingNRG"
-    label = "stakingNRG"
+    label = var.name
     tag = "stakingNRG"
     notify_activate = true
     script_id = vultr_startup_script.energi.id

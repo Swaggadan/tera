@@ -1,0 +1,6 @@
+{
+  "registry.terraform.io/terraform-providers/vultr": {
+    "hash": "h1:5v0vD1iEOljZ24o6FLcdDQxUCEi0dbkOWD/Z1fKxqRI=",
+    "version": "1.3.3"
+  }
+}
